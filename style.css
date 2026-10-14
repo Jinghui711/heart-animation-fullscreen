@@ -1,6 +1,27 @@
 * { box-sizing: border-box; }
+@font-face {
+  font-family: "HJR Script";
+  src: url("assets/great-vibes.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
 html, body { margin: 0; padding: 0; width: 100%; height: 100%; overflow: hidden; background: #000; }
 canvas { position: fixed; top: 0; left: 0; display: block; width: 100vw; height: 100vh; height: 100dvh; background: #000; }
-.credit { position: fixed; z-index: 1; left: 12px; right: 12px; bottom: max(14px, env(safe-area-inset-bottom)); text-align: center; font: 11px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: #98666e; }
-.credit a { color: inherit; text-decoration: none; }
-.credit a:focus-visible { outline: 1px solid #ff758e; outline-offset: 4px; }
+.heart-name {
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "HJR Script", "Snell Roundhand", "Segoe Script", cursive;
+  font-size: min(14.4vw, 11.61vh, 72px);
+  font-size: min(14.4vw, 11.61dvh, 72px);
+  font-weight: 400;
+  line-height: 1.2;
+  color: #ffe4ed;
+  text-shadow: 0 0 8px rgba(255, 137, 170, .65), 0 0 24px rgba(255, 54, 101, .4);
+  white-space: nowrap;
+  pointer-events: none;
+  user-select: none;
+}
